@@ -61,7 +61,7 @@ class property
     void copy(const MQTTProperty& other);
 
     friend class properties;
-    property() {}
+    property() : prop_{} {}
 
 public:
     /**
