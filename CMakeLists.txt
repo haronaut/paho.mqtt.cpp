@@ -102,7 +102,7 @@ if(PAHO_WITH_MQTT_C)
         RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
     )
 else()
-    find_package(eclipse-paho-mqtt-c 1.3.14 REQUIRED)
+    find_package(eclipse-paho-mqtt-c 1.3 EXACT REQUIRED)
     if(eclipse-paho-mqtt-c_FOUND)
         message(STATUS "Found Paho C v${eclipse-paho-mqtt-c_VERSION}")
     endif()
